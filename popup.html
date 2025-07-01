@@ -1,5 +1,24 @@
-<html>
-    <body>
-        <h1>Spotify Controller</h1>
-    </body>
-</html>
+<body>
+  <div class="icon-container">
+    <img src="./images/spotify-logo.png"/>
+  </div>
+  <div id="login-section" class="login-button-container">
+    <button id="login" class="login-button">Login</button>
+  </div>
+
+  <div id="playing-div" class="now-playing">
+    <h2 id="artist"></h2>
+    <h2 id="song-title">Song:</h2>
+  </div>
+
+  <div id="app-section" style="display:none;">
+    <button id="previous">Previous</button>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="next">Next</button>
+    <pre id="output"></pre>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</body>

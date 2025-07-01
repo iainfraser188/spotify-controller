@@ -1,9 +1,17 @@
 {
-    "name": "Spotify Controller",
-    "description": "Controller for Spotify",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action":{
-        "default_popup": "popup.html"
-    }
+  "manifest_version": 3,
+  "name": "Spotify Controller",
+  "version": "1.0",
+  "permissions": ["storage", "identity"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://accounts.spotify.com/*",
+    "https://api.spotify.com/*"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["callback.html", "images/spotify-logo.png"],
+    "matches": ["<all_urls>"]
+  }]
 }

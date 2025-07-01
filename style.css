@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  padding: 10px;
+  background-color:rgb(41, 40, 40);
+}
+
+.icon-container{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button {
+    color:white;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: rgb(29, 185, 84) ;
+    font-size: x-large;
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.now-playing {
+    color:white;
+    flex-direction: column;
+}
