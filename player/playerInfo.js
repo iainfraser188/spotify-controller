@@ -18,10 +18,12 @@ export async function updateNowPlaying(token) {
   if(trackdata){
     const artistName = trackdata.item.artists[0].name;
     const trackName = trackdata.item.name;
+    const imageUrl = trackdata.item.album.images[0].url
     console.log("artistName", artistName);
     console.log("trackName", trackName);
 
     document.getElementById("artist").textContent = `Artist: ${artistName}`;
     document.getElementById("song-title").textContent = `Song: ${trackName}`;
+    document.getElementById("album-image").src = imageUrl;
   }
 }

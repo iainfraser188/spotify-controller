@@ -27,3 +27,20 @@ body {
     color:white;
     flex-direction: column;
 }
+
+.control-button {
+    width: 40px;
+    background: none;
+    border: none;
+    color: green;
+}
+
+.flash {
+  animation: flash-effect 150ms ease;
+}
+
+@keyframes flash-effect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}

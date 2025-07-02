@@ -1,4 +1,4 @@
-const clientId = '94d72f1450d54001a1f2b132e5ef0499';
+const clientId = '';
 const tokenEndpoint = 'https://accounts.spotify.com/api/token';
 const redirectUri = chrome.runtime.getURL("callback.html");
 
